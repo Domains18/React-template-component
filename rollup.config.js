@@ -3,20 +3,20 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
 
-import packagejson from('./package.json');
+import packageJson from './package.json'  assert{ type: "json"}
 
 export default [
     {
         input: "src/index.ts",
         output: [
             {
-                file: packagejson.main,
+                file: packageJson.main,
                 format: "cjs",
                 sourcemap: true,
             },
             
             {
-                file: packagejson.module,
+                file: packageJson.module,
                 format: "esm",
                 sourcemap: true
             }
