@@ -10,15 +10,13 @@
   "type": "module",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
-    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.0",
     "@rollup/plugin-typescript": "^11.1.2",
     "@types/react": "^18.2.20",
     "react": "^18.2.0",
+    "rollup": "^3.28.0",
     "rollup-plugin-dts": "^5.3.1",
     "tslib": "^2.6.1"
-  },
-  "dependencies": {
-    "rollup": "^3.28.0"
   },
   "main": "dist/cjs.index.js",
   "module": "dist/esm/index.js",
